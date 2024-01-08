@@ -1,0 +1,33 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["standard-with-typescript", "prettier"],
+
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-extraneous-class": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/return-await": "off",
+    // Prettier
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
+  }
+}
